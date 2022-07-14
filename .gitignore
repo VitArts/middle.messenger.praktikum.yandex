@@ -1,4 +1,4 @@
 node_modules
-.cashe
-.parsel-cashe
+.cache
+.parsel-cache
 .vscode
