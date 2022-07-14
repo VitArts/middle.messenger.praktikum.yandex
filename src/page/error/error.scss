@@ -1,0 +1,32 @@
+@import '/src/_var.scss';
+
+.error {
+
+	.title {
+		font-size: 40px;
+		line-height: 40px;		
+		text-align: center;
+		color: #1E1E1E;
+	}
+
+	.info {
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #1E1E1E;
+		margin-top: 20px
+	}
+
+	p {
+    text-align: center;
+		margin-top: 60px;
+	}
+
+	a {
+	font-size: 11px;
+	line-height: 11px;
+	color: $primary-color;
+	text-decoration: none;
+	}
+	
+}

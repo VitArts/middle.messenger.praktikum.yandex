@@ -1,0 +1,164 @@
+@import '/src/_var.scss';
+
+.messenger {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+
+	.left {
+		width: 310px;
+    height: 100vh;
+    background: #fbfbfb;
+    border-right: 1px solid $light-grey-color;
+    padding: 10px;
+    background: #f8f9fa;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+		ul {
+			padding:0
+		}
+
+		.sticky {
+			position: sticky;
+			top: 0;
+			z-index: 1020;
+			background: #f8f9fa;
+	}
+
+		.contacts-item {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			border-top: 1px solid $light-grey-color;
+			padding: 12px 0
+		}
+
+		.contacts-content {
+			width: 100%;
+		}
+
+		.contacts-info {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.contacts-texts {
+			flex-direction: row;
+			justify-content: space-between;
+			display: flex;
+			align-content: center;
+			align-items: center;
+		}
+
+		.chat-time {
+			font-size: 9px;
+			line-height: 13px;
+			text-align: right;
+			color: $grey-color;
+	}
+
+	.chat-name {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    color: #1E1E1E;
+}
+
+.text-truncate {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: $grey-color;
+}
+
+		.avatar {
+			padding-right: 10px;
+		}
+
+		.badge {
+			background: $primary-color;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			font-size: 11px;
+			line-height: 20px;
+			text-align: center;
+			color: #FFFFFF;
+	}
+
+
+	.profile {
+		text-align: right;
+		padding-bottom: 23px;
+		padding-top: 21px;
+
+		a {
+			font-size: 12px;
+			line-height: 12px;
+			text-align: right;
+			color: $grey-color;
+			text-decoration: none;
+		}
+	}
+
+
+	.search {
+
+
+		input {
+			height: 32px;
+			background: #EFEFEF;
+			border-radius: 5px;
+			width: 100%;
+			border: 0;
+			text-align: center;
+			font-size: 12px;
+			line-height: 12px;
+			color: $grey-color;
+		}
+	}
+
+	}
+
+
+	.right {
+		height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    flex: 1;
+    order: 2;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+		box-sizing: border-box;
+
+
+		.info {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 12px;
+			text-align: center;
+			color: $grey-color;
+			width: 100%;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+		}
+
+		.chat-header {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: flex-start;
+	}
+	}
+}
