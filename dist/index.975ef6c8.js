@@ -564,7 +564,7 @@ const page = {
 };
 app.innerHTML = (page[src] || (0, _404Default.default))();
 
-},{"./page/home/main/main":"jdT3F","./style.scss":"81Z0h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./page/error/404/404":"2XPx9","./page/auth/login/login":"hTdjG","./page/auth/reg/reg":"AeXjQ","./page/profile/profile/profile":"yuFaW","./page/profile/edit/edit-profile":"eIPVR","./page/profile/edit/edit-password":"hcqZc","./page/home/chat/chat":"4bcGE"}],"jdT3F":[function(require,module,exports) {
+},{"./page/home/main/main":"jdT3F","./page/home/chat/chat":"4bcGE","./page/auth/login/login":"hTdjG","./page/auth/reg/reg":"AeXjQ","./page/profile/profile/profile":"yuFaW","./page/profile/edit/edit-profile":"eIPVR","./page/profile/edit/edit-password":"hcqZc","./page/error/404/404":"2XPx9","./style.scss":"81Z0h","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jdT3F":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _mainHbs = require("./main.hbs");
@@ -572,7 +572,7 @@ var _mainHbsDefault = parcelHelpers.interopDefault(_mainHbs);
 var _mainScss = require("../main.scss");
 exports.default = ()=>(0, _mainHbsDefault.default)();
 
-},{"./main.hbs":"gPBPM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../main.scss":"5HdO7"}],"gPBPM":[function(require,module,exports) {
+},{"./main.hbs":"gPBPM","../main.scss":"5HdO7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gPBPM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -11937,15 +11937,15 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"5HdO7":[function() {},{}],"81Z0h":[function() {},{}],"2XPx9":[function(require,module,exports) {
+},{}],"5HdO7":[function() {},{}],"4bcGE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _404Hbs = require("./404.hbs");
-var _404HbsDefault = parcelHelpers.interopDefault(_404Hbs);
-var _errorScss = require("../error.scss");
-exports.default = ()=>(0, _404HbsDefault.default)();
+var _chatHbs = require("./chat.hbs");
+var _chatHbsDefault = parcelHelpers.interopDefault(_chatHbs);
+var _mainScss = require("../main.scss");
+exports.default = ()=>(0, _chatHbsDefault.default)();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../error.scss":"8EITo","./404.hbs":"iBWBM"}],"8EITo":[function() {},{}],"iBWBM":[function(require,module,exports) {
+},{"./chat.hbs":"c0s8l","../main.scss":"5HdO7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c0s8l":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -11956,13 +11956,13 @@ const templateFunction = (0, _handlebarsDefault.default).template({
         ">= 4.3.0"
     ],
     "main": function(container, depth0, helpers, partials, data) {
-        return '<div class="main-layout">\r\n    <div class="error">\r\n        <div class="title">404</div>\r\n        <div class="info">\u041D\u0435 \u0442\u0443\u0434\u0430 \u043F\u043E\u043F\u0430\u043B\u0438</div>\r\n        <p><a href="/">\u041D\u0430\u0437\u0430\u0434 \u043A \u0447\u0430\u0442\u0430\u043C</a></p>\r\n    </div>\r\n</div>\r\n\r\n  ';
+        return '<div class="messenger">\r\n  <div class="left">\r\n    <div class="sticky">\r\n      <div class="profile">\r\n        <a href="/profile">\u041F\u0440\u043E\u0444\u0438\u043B\u044C ></a>\r\n      </div>\r\n\r\n      <div class="search">\r\n        <input type="search" name="" id="" value="\u041F\u043E\u0438\u0441\u043A" />\r\n      </div>\r\n    </div>\r\n\r\n    <ul class="contacts-list">\r\n      <li class="contacts-item">\r\n        <div class="avatar">\r\n          <img src="/static/avatar.svg" alt="" />\r\n        </div>\r\n        <div class="contacts-content">\r\n          <div class="contacts-info">\r\n            <div class="chat-name">\u0410\u043D\u0434\u0440\u0435\u0439</div>\r\n            <div class="chat-time">10:49</div>\r\n          </div>\r\n          <div class="contacts-texts">\r\n            <p class="text-truncate">\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435</p>\r\n            <div class="badge">2</div>\r\n          </div>\r\n        </div>\r\n      </li>\r\n\r\n      <li class="contacts-item">\r\n        <div class="avatar">\r\n          <img src="/static/avatar.svg" alt="" />\r\n        </div>\r\n        <div class="contacts-content">\r\n          <div class="contacts-info">\r\n            <div class="chat-name">\u0410\u043D\u0434\u0440\u0435\u0439</div>\r\n            <div class="chat-time">10:49</div>\r\n          </div>\r\n          <div class="contacts-texts">\r\n            <p class="text-truncate">\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435</p>\r\n            <div class="badge">2</div>\r\n          </div>\r\n        </div>\r\n      </li>\r\n\r\n    </ul>\r\n  </div>\r\n  <div class="right">\r\n    <div class="chat-header">\r\n\r\n      <div class="chat-name">\r\n        <div class="avatar">\r\n          <a href="#"><img src="/static/avatar.svg" alt="\u041F\u0440\u043E\u0444\u0438\u043B\u044C" /></a>\r\n        </div>\r\n         <div class="name">\u0412\u0430\u0434\u0438\u043C</div>\r\n         <div class="settings">\r\n            <img src="/static/settings.svg" alt="\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E">\r\n          </div>\r\n      </div>\r\n\r\n      <div class="nav">\r\n        <div class="nav-item">\r\n\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class="chat-content">\r\n      <div class="container">\r\n        <div class="message-d">\r\n         <div class="message-data"><time>19 \u0438\u044E\u043D\u044F</time></div>\r\n            <div class="message">\r\n            <div class="message-wrapper">\r\n                <div class="message-content">\r\n                    <span>\u041F\u0440\u0438\u0432\u0435\u0442! \u0421\u043C\u043E\u0442\u0440\u0438, \u0442\u0443\u0442 \u0432\u0441\u043F\u043B\u044B\u043B \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0439 \u043A\u0443\u0441\u043E\u043A \u043B\u0443\u043D\u043D\u043E\u0439 \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u2014 \u041D\u0410\u0421\u0410 \u0432 \u043A\u0430\u043A\u043E\u0439-\u0442\u043E \u043C\u043E\u043C\u0435\u043D\u0442 \u043F\u043E\u043F\u0440\u043E\u0441\u0438\u043B\u0430 \u0425\u0430\u0441\u0441\u0435\u043B\u044C\u0431\u043B\u0430\u0434 \u0430\u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043C\u043E\u0434\u0435\u043B\u044C SWC \u0434\u043B\u044F \u043F\u043E\u043B\u0435\u0442\u043E\u0432 \u043D\u0430 \u041B\u0443\u043D\u0443. \u0421\u0435\u0439\u0447\u0430\u0441 \u043C\u044B \u0432\u0441\u0435 \u0437\u043D\u0430\u0435\u043C \u0447\u0442\u043E \u0430\u0441\u0442\u0440\u043E\u043D\u0430\u0432\u0442\u044B \u043B\u0435\u0442\u0430\u043B\u0438 \u0441 \u043C\u043E\u0434\u0435\u043B\u044C\u044E 500 EL \u2014 \u0438 \u043A \u0441\u043B\u043E\u0432\u0443 \u0433\u043E\u0432\u043E\u0440\u044F, \u0432\u0441\u0435 \u0442\u0443\u0448\u043A\u0438 \u044D\u0442\u0438\u0445 \u043A\u0430\u043C\u0435\u0440 \u0432\u0441\u0435 \u0435\u0449\u0435 \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u043D\u0430 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438 \u041B\u0443\u043D\u044B, \u0442\u0430\u043A \u043A\u0430\u043A \u0430\u0441\u0442\u0440\u043E\u043D\u0430\u0432\u0442\u044B \u0441 \u0441\u043E\u0431\u043E\u0439 \u0437\u0430\u0431\u0440\u0430\u043B\u0438 \u0442\u043E\u043B\u044C\u043A\u043E \u043A\u0430\u0441\u0441\u0435\u0442\u044B \u0441 \u043F\u043B\u0435\u043D\u043A\u043E\u0439.\r\n\r\n                    \u0425\u0430\u0441\u0441\u0435\u043B\u044C\u0431\u043B\u0430\u0434 \u0432 \u0438\u0442\u043E\u0433\u0435 \u0430\u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u043B SWC \u0434\u043B\u044F \u043A\u043E\u0441\u043C\u043E\u0441\u0430, \u043D\u043E \u0447\u0442\u043E-\u0442\u043E \u043F\u043E\u0448\u043B\u043E \u043D\u0435 \u0442\u0430\u043A \u0438 \u043D\u0430 \u0440\u0430\u043A\u0435\u0442\u0443 \u043E\u043D\u0438 \u0442\u0430\u043A \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u0438 \u043D\u0435 \u043F\u043E\u043F\u0430\u043B\u0438. \u0412\u0441\u0435\u0433\u043E \u0438\u0445 \u0431\u044B\u043B\u043E \u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u043E 25 \u0448\u0442\u0443\u043A, \u043E\u0434\u043D\u0443 \u0438\u0437 \u043D\u0438\u0445 \u043D\u0435\u0434\u0430\u0432\u043D\u043E \u043F\u0440\u043E\u0434\u0430\u043B\u0438 \u043D\u0430 \u0430\u0443\u043A\u0446\u0438\u043E\u043D\u0435 \u0437\u0430 45000 \u0435\u0432\u0440\u043E.</span>\r\n                    <div class="data">\r\n                      11:56\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n\r\n\r\n          <div class="message">\r\n            <div class="message-wrapper">\r\n                <div class="message-content img">\r\n                    <span><img src="/static/message.jpg" alt="\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435"></span>\r\n                    <div class="data">\r\n                      11:56\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n\r\n            <div class="message self">\r\n            <div class="message-wrapper">\r\n                <div class="message-content">\r\n                    <span>\u041A\u0440\u0443\u0442\u043E!</span>\r\n                    <div class="data">\r\n                      11:56\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class="chat-footer">\r\n     <div class="att">\r\n       <img src="/static/att.svg" alt="\u041F\u0440\u0438\u043A\u0440\u0435\u043F\u0438\u0442\u044C">\r\n     </div>\r\n     <div class="message-inp">\r\n       <input type="text" placeholder="\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435">\r\n     </div>\r\n     <div class="send">\r\n       <img src="/static/send.svg" alt="\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C">\r\n     </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>';
     },
     "useData": true
 });
 exports.default = templateFunction;
 
-},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hTdjG":[function(require,module,exports) {
+},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5HdO7":[function() {},{}],"hTdjG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _loginHbs = require("./login.hbs");
@@ -11970,7 +11970,7 @@ var _loginHbsDefault = parcelHelpers.interopDefault(_loginHbs);
 var _authScss = require("../auth.scss");
 exports.default = ()=>(0, _loginHbsDefault.default)();
 
-},{"./login.hbs":"l1DxD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../auth.scss":"8hv0n"}],"l1DxD":[function(require,module,exports) {
+},{"./login.hbs":"l1DxD","../auth.scss":"8hv0n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l1DxD":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -11995,7 +11995,7 @@ var _regHbsDefault = parcelHelpers.interopDefault(_regHbs);
 var _authScss = require("../auth.scss");
 exports.default = ()=>(0, _regHbsDefault.default)();
 
-},{"./reg.hbs":"6J9sS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../auth.scss":"8hv0n"}],"6J9sS":[function(require,module,exports) {
+},{"./reg.hbs":"6J9sS","../auth.scss":"8hv0n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6J9sS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -12020,7 +12020,7 @@ var _profileHbsDefault = parcelHelpers.interopDefault(_profileHbs);
 var _profileScss = require("../profile.scss");
 exports.default = ()=>(0, _profileHbsDefault.default)();
 
-},{"../profile.scss":"4IdPp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./profile.hbs":"1LLvs"}],"4IdPp":[function() {},{}],"1LLvs":[function(require,module,exports) {
+},{"./profile.hbs":"1LLvs","../profile.scss":"4IdPp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1LLvs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -12037,7 +12037,7 @@ const templateFunction = (0, _handlebarsDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eIPVR":[function(require,module,exports) {
+},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4IdPp":[function() {},{}],"eIPVR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _editProfileHbs = require("./edit-profile.hbs");
@@ -12087,15 +12087,15 @@ const templateFunction = (0, _handlebarsDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4IdPp":[function() {},{}],"4bcGE":[function(require,module,exports) {
+},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4IdPp":[function() {},{}],"2XPx9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _chatHbs = require("./chat.hbs");
-var _chatHbsDefault = parcelHelpers.interopDefault(_chatHbs);
-var _mainScss = require("../main.scss");
-exports.default = ()=>(0, _chatHbsDefault.default)();
+var _404Hbs = require("./404.hbs");
+var _404HbsDefault = parcelHelpers.interopDefault(_404Hbs);
+var _errorScss = require("../error.scss");
+exports.default = ()=>(0, _404HbsDefault.default)();
 
-},{"./chat.hbs":"c0s8l","../main.scss":"5HdO7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c0s8l":[function(require,module,exports) {
+},{"./404.hbs":"iBWBM","../error.scss":"8EITo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iBWBM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -12106,12 +12106,12 @@ const templateFunction = (0, _handlebarsDefault.default).template({
         ">= 4.3.0"
     ],
     "main": function(container, depth0, helpers, partials, data) {
-        return '<div class="messenger">\r\n  <div class="left">\r\n    <div class="sticky">\r\n      <div class="profile">\r\n        <a href="/profile">\u041F\u0440\u043E\u0444\u0438\u043B\u044C ></a>\r\n      </div>\r\n\r\n      <div class="search">\r\n        <input type="search" name="" id="" value="\u041F\u043E\u0438\u0441\u043A" />\r\n      </div>\r\n    </div>\r\n\r\n    <ul class="contacts-list">\r\n      <li class="contacts-item">\r\n        <div class="avatar">\r\n          <img src="/static/avatar.svg" alt="" />\r\n        </div>\r\n        <div class="contacts-content">\r\n          <div class="contacts-info">\r\n            <div class="chat-name">\u0410\u043D\u0434\u0440\u0435\u0439</div>\r\n            <div class="chat-time">10:49</div>\r\n          </div>\r\n          <div class="contacts-texts">\r\n            <p class="text-truncate">\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435</p>\r\n            <div class="badge">2</div>\r\n          </div>\r\n        </div>\r\n      </li>\r\n\r\n      <li class="contacts-item">\r\n        <div class="avatar">\r\n          <img src="/static/avatar.svg" alt="" />\r\n        </div>\r\n        <div class="contacts-content">\r\n          <div class="contacts-info">\r\n            <div class="chat-name">\u0410\u043D\u0434\u0440\u0435\u0439</div>\r\n            <div class="chat-time">10:49</div>\r\n          </div>\r\n          <div class="contacts-texts">\r\n            <p class="text-truncate">\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435</p>\r\n            <div class="badge">2</div>\r\n          </div>\r\n        </div>\r\n      </li>\r\n\r\n    </ul>\r\n  </div>\r\n  <div class="right">\r\n    <div class="chat-header">\r\n\r\n      <div class="chat-name">\r\n        <div class="avatar">\r\n          <img src="#" alt="" />\r\n          <div class="name">\u0412\u0430\u0434\u0438\u043C</div>\r\n        </div>\r\n      </div>\r\n\r\n      <div class="nav">\r\n        <div class="nav-item">\r\n\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class="chat-content">\r\n      \u043A\u043E\u043D\u0442\u0435\u043D\u0442\r\n\r\n    </div>\r\n\r\n    <div class="chat-footer">\r\n      \u0444\u0443\u0442\u0435\u0440\r\n\r\n    </div>\r\n\r\n  </div>\r\n</div>';
+        return '<div class="main-layout">\r\n    <div class="error">\r\n        <div class="title">404</div>\r\n        <div class="info">\u041D\u0435 \u0442\u0443\u0434\u0430 \u043F\u043E\u043F\u0430\u043B\u0438</div>\r\n        <p><a href="/">\u041D\u0430\u0437\u0430\u0434 \u043A \u0447\u0430\u0442\u0430\u043C</a></p>\r\n    </div>\r\n</div>\r\n\r\n  ';
     },
     "useData": true
 });
 exports.default = templateFunction;
 
-},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5HdO7":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire938d")
+},{"handlebars":"i0QfX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8EITo":[function() {},{}],"81Z0h":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire938d")
 
 //# sourceMappingURL=index.975ef6c8.js.map
