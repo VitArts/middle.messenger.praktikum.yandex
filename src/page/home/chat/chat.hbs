@@ -2,7 +2,7 @@
   <div class="left">
     <div class="sticky">
       <div class="profile">
-        <a href="/profile">Профиль ></a>
+         {{{ linkProfile }}}
       </div>
 
       <div class="search">
@@ -11,38 +11,9 @@
     </div>
 
     <ul class="contacts-list">
-      <li class="contacts-item">
-        <div class="avatar">
-          <img src="/static/avatar.svg" alt="" />
-        </div>
-        <div class="contacts-content">
-          <div class="contacts-info">
-            <div class="chat-name">Андрей</div>
-            <div class="chat-time">10:49</div>
-          </div>
-          <div class="contacts-texts">
-            <p class="text-truncate">Сообщение</p>
-            <div class="badge">2</div>
-          </div>
-        </div>
-      </li>
-
-      <li class="contacts-item">
-        <div class="avatar">
-          <img src="/static/avatar.svg" alt="" />
-        </div>
-        <div class="contacts-content">
-          <div class="contacts-info">
-            <div class="chat-name">Андрей</div>
-            <div class="chat-time">10:49</div>
-          </div>
-          <div class="contacts-texts">
-            <p class="text-truncate">Сообщение</p>
-            <div class="badge">2</div>
-          </div>
-        </div>
-      </li>
-
+      {{{ contactItem }}}  
+      {{{ contactItem }}}  
+      {{{ contactItem }}} 
     </ul>
   </div>
   <div class="right">

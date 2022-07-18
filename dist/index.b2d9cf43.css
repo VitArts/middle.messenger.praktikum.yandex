@@ -523,6 +523,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-decoration: none;
 }
 
+.login .link {
+  margin-top: 20px;
+}
+
 .profile {
   width: 100%;
   flex-flow: row;
@@ -592,7 +596,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   display: flex;
 }
 
-.profile li .name-field {
+.profile li label, .profile li .name-field {
   color: #1e1e1e;
   font-size: 13px;
   font-weight: 600;
@@ -664,6 +668,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   font-size: 11px;
   line-height: 11px;
   text-decoration: none;
+}
+
+.error .link {
+  text-align: center;
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=index.b2d9cf43.css.map */

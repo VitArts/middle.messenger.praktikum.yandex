@@ -1,21 +1,19 @@
 <div class="main-layout">
   <div class="login">
-    <div class="title">
-      Вход
-    </div>
+   {{{ title }}}
     <form class="form">
       <div class="group-all">
         <div class="group">
-          <label for="login">Логин</label>
-          <input type="text" name="login" id="login" />
+          {{{ login }}}
         </div>
         <div class="group">
-          <label for="password">Пароль</label>
-          <input type="password" name="password" id="password" />
+           {{{ password }}}
         </div>
       </div>
-      <button>Авторизоваться</button>
-      <p><a href="/reg/">Нет аккаунта?</a></p>
+      {{{ button }}}
+      <div class="link"> 
+        {{{ link }}}
+      </div>
     </form>
   </div>
 </div>
