@@ -7,8 +7,8 @@ import info from '../../../components/info/info'
 
 import '../error.scss'
 
-export default () => error404({title: title('404'), 
-															link: a('Назад к чатам'), 
-															info: info('Не туда попали')})
-
-
+export default () => error404({
+	title: title('404'),
+	link: a('Назад к чатам'),
+	info: info('Не туда попали')
+})

@@ -4,4 +4,7 @@ import contactItem from '../../../components/contact-item/contact-item'
 
 import '../main.scss'
 
-export default () => main({linkProfile: a('Профиль >', '/profile'), contactItem});
+export default () => main({
+	linkProfile: a('Профиль >', '/profile'),
+	contactItem
+});

@@ -6,9 +6,11 @@ import nav from '../../../components/navigation/navigation'
 
 import '../profile.scss'
 
-export default () => profile({prof, 
-															avatar:avatar('/static/ava.svg','Иван'),
-														 	edit:a('Изменить данные', '/profile/edit'),
-															editPassword:a('Изменить пароль', '/profile/edit/pass'),
-															nav:nav('/'),
-															exit:a('Выйти', '/login', 'red')})
+export default () => profile({
+	prof,
+	avatar: avatar('/static/ava.svg', 'Иван'),
+	edit: a('Изменить данные', '/profile/edit'),
+	editPassword: a('Изменить пароль', '/profile/edit/pass'),
+	nav: nav('/'),
+	exit: a('Выйти', '/login', 'red')
+})

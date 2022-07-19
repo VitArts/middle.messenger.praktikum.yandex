@@ -1,3 +1,5 @@
 import nav from './navigation.hbs'
 
-export default (link) => nav({link})
+export default (link) => nav({
+	link
+})

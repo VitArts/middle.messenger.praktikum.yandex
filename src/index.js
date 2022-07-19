@@ -12,8 +12,8 @@ import './style.scss';
 const app = document.querySelector('#app');
 let src = window.location.pathname
 
-if (src[src.length - 1] !== '/' ) {
-	src+= '/'
+if (src[src.length - 1] !== '/') {
+	src += '/'
 }
 
 const page = {

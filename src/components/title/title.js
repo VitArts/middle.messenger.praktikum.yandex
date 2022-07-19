@@ -1,3 +1,5 @@
 import title from './title.hbs'
 
-export default (text) => title({text})
+export default (text) => title({
+	text
+})

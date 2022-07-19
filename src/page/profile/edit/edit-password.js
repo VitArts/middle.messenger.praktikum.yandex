@@ -6,9 +6,11 @@ import avatar from '../../../components/avatar/avatar'
 
 import '../profile.scss'
 
-export default () => editPassword({nav: nav('/profile'),
-																	 oldPassword: input('Старый пароль', 'old_password', 'password' ),
-																	 Password: input('Новый пароль', 'password', 'password' )	,
-																	 PasswordTwo: input('Повторите новый пароль', 'passwordTwo', 'password' ),
-																   button: button('Сохранить'),
-																	 avatar: avatar('/static/ava.svg')})
+export default () => editPassword({
+	nav: nav('/profile'),
+	oldPassword: input('Старый пароль', 'old_password', 'password'),
+	Password: input('Новый пароль', 'password', 'password'),
+	PasswordTwo: input('Повторите новый пароль', 'passwordTwo', 'password'),
+	button: button('Сохранить'),
+	avatar: avatar('/static/ava.svg')
+})

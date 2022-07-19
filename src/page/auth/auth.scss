@@ -21,16 +21,16 @@
 	}
 
 	.group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 		gap: 8px;
 		padding-bottom: 20px;
-}
+	}
 
-.group-all {
-	padding: 50px 0;
-}
+	.group-all {
+		padding: 50px 0;
+	}
 
 	label {
 		font-size: 9px;
@@ -38,7 +38,7 @@
 		color: #999999;
 	}
 
-  input {
+	input {
 		width: 100%;
 		border: 0;
 		border-bottom: 1px solid $primary-color;
@@ -57,7 +57,7 @@
 	}
 
 	.link {
-    margin-top: 20px;
+		margin-top: 20px;
 	}
 
 }

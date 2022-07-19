@@ -6,8 +6,10 @@ import title from '../../../components/title/title'
 
 import '../auth.scss'
 
-export default () => login({button: button('Войти'), 
-														link: a('Нет аккаунта?', '/reg'), 
-														login: input('Логин', 'login', 'text'), 
-														password: input('Пароль', 'password', 'password'), 
-														title: title('Вход')})
+export default () => login({
+	button: button('Войти'),
+	link: a('Нет аккаунта?', '/reg'),
+	login: input('Логин', 'login', 'text'),
+	password: input('Пароль', 'password', 'password'),
+	title: title('Вход')
+})
