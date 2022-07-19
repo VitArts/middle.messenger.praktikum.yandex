@@ -1,5 +1,5 @@
 # middle.messenger.praktikum.yandex
-sprint 1
+sprint 2
 
 Запуск проекта:
 npm run start
